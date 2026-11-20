@@ -1,0 +1,22 @@
+[project]
+name = "3d-mapping"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Thierno DIALLO", email = "thiernosaliou0223@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.5",
+]
+
+[project.scripts]
+3d-mapping = "_3d_mapping:main"
+
+[tool.uv.build-backend]
+module-name = "_3d_mapping"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
